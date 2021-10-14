@@ -1,3 +1,4 @@
+using EbayNet;
 using Newtonsoft.Json;
 
 namespace BrowseAPIs.Models

@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace BrowseAPIs.Models
+namespace EbayNet
 {
     internal class ParseStringConverter : JsonConverter
     {

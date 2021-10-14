@@ -9,7 +9,8 @@ namespace BrowseAPIs.Models
     using System.Collections.Generic;
 
     using System.Globalization;
-    using Newtonsoft.Json;
+	using EbayNet;
+	using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
     public partial class ItemGroupModel
@@ -119,6 +120,6 @@ namespace BrowseAPIs.Models
 
     public partial class ItemGroupModel
     {
-        public static ItemGroupModel FromJson(string json) => JsonConvert.DeserializeObject<ItemGroupModel>(json, BrowseAPIs.Models.Converter.Settings);
+        public static ItemGroupModel FromJson(string json) => JsonConvert.DeserializeObject<ItemGroupModel>(json, Converter.Settings);
     }
 }

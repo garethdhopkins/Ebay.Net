@@ -1,7 +1,8 @@
 namespace BrowseAPIs.Models
 {
     using System;
-    using Newtonsoft.Json;
+	using EbayNet;
+	using Newtonsoft.Json;
 
     public partial class ItemModel
     {
@@ -80,6 +81,6 @@ namespace BrowseAPIs.Models
 
     public partial class ItemModel
     {
-        public static ItemModel FromJson(string json) => JsonConvert.DeserializeObject<ItemModel>(json, BrowseAPIs.Models.Converter.Settings);
+        public static ItemModel FromJson(string json) => JsonConvert.DeserializeObject<ItemModel>(json, Converter.Settings);
     }
 }

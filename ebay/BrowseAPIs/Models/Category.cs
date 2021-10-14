@@ -1,6 +1,7 @@
 namespace BrowseAPIs.Models
 {
-    using Newtonsoft.Json;
+	using EbayNet;
+	using Newtonsoft.Json;
 
     public partial class Category
     {
